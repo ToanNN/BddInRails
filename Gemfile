@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
-
+group :development, :test do
+  gem 'rspec-rails', '~>3.1.0'
+end
+group :test do
+  gem 'cucumber-rails', '~>1.4.2', require: false
+  gem 'database_cleaner'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use postgresql as the database for Active Record
